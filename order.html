@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">      
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <ul class="nav-items">
+                <li><a href="index.html" class="links">HOME</a></li>
+                <li><a href="about_us.html" class="links">ABOUT US</a></li>
+                <li><a href="Categorie.html" class="links">CATEGORY</a></li>
+                <li><a href="order.html" class="order-btn">ORDER NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="bod">
+    <h2>Order you car</h2>
+    <div id="inpt">
+    <form action="order.php" method="post">
+        <input type="text" name="name" placeholder=" Enter your full name" required autocomplete="on">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="tel" pattern="[0-9]{10}" name="phone" placeholder="Enter your phone number" max="9999999999">
+        <input type="text" name="address" placeholder="Enter your address" required>
+        <input type="text" name="CNI" placeholder="CNI" required>
+    </div>
+    <div id="select">
+        <input type="text" list="carlist" placeholder="choice your car" required>
+        <datalist id="carlist" class="car">
+            <option value=" urus"></option>
+            <option value="aventador"></option>
+            <option value="huracan"></option>
+            <option value="aventador-svj"></option>
+            <option value="a1"></option>
+            <option value="a2"></option>
+            <option value="a3"></option>
+            <option value="a4"></option>
+            <option value="a5"></option>
+            <option value="a6"></option>
+            <option value="Q1"></option>
+            <option value="Q2"></option>
+            <option value="Q3"></option>
+            <option value="Q4"></option>
+            <option value="Q5"></option>
+            <option value="Q7"></option>
+            <option value="Q8"></option>
+            <option value="R8"></option>
+            <option value="TT"></option>
+            <option value="S3"></option>
+            <option value="X1"></option>
+            <option value="X2"></option>
+            <option value="X3"></option>
+            <option value="X4"></option>
+            <option value="X5"></option>
+            <option value="X6"></option>
+            <option value="M1"></option>
+            <option value="M2"></option>
+            <option value="M3"></option>
+            <option value="M4"></option>
+            <option value="M5"></option>
+            <option value="M6"></option>
+            <option value="camry"></option>
+            <option value="corolla"></option>
+            <option value="supra"></option>
+            <option value="tacoma"></option>
+            <option value="Tundra"></option>
+            <option value="highlander"></option>
+            <option value="RAV4"></option>
+            <option value="Sienna"></option>
+            <option value="accord"></option>
+            <option value="civic"></option>
+        </datalist>
+        
+    </div>
+    <div >
+        <button type="submit" id="sub" name="submit">Order now</button>
+    </div>    
+</div>       
+</body>
+</html>
